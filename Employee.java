@@ -1,13 +1,15 @@
-public abstract class Employee{
+public abstract class Employee
+	private int bonusMoney;
 	private int effectivenessMultiplier;
 	private int baseWeeklySalary;
 	private int moneyEarned;
 	public Employee() {
+		bonusMoney = 100;
 		effectivenessMultiplier = 1;
 		moneyEarned=0;
 	}
 	public void earnPaycheck(){
-		moneyEarned = moneyEarned + baseWeeklySalary;
+		payCheck =  baseWeeklySalary * effectivenessMultiplier;
 	}
 	public void earnBonus(int amount){
 		for(int i = 0; i < employees.length; i++){
@@ -15,12 +17,6 @@ public abstract class Employee{
 			System.out.println(bonus);
 		}
 	}
-	/*public void setEffectivenessMultiplier(){
-		for(int i < 0; i<employees.length; i++){
-			int eM= effectivenessMultiplier;
-			
-		}
-	}*/
 	public void getEffectivenessMultiplier(){
 		return effectivenessMultiplier;
 	}
