@@ -1,4 +1,6 @@
 import java.util.Random;
+// @BC: This class has a number of syntax errors preventing it from compiling
+//		Also, it never tells Employees to work() and it never outputs any messages regarding progress
 public class Simulator{
 	private int day;
 	private Week Week[5];
@@ -10,6 +12,7 @@ public class Simulator{
 	}
 	public Simulator(){
 		employees = new Employee[12];
+		// @BC: What is 'i' at this point?
 		Employee x = new Employee[i];
 		System.out.println(x);
 		for(int i = 0; i < 4; i++){
@@ -20,6 +23,7 @@ public class Simulator{
 			Moover m = new Moover();
 			employees[i]=m;
 		}
+		// @BC: Since this for loop happens last, it will begin at 0 and overwrite every item in the array
 		for(int i=0; i<12; i++){
 			TasteBudStylist tbs = new TasteBudStylist();
 			employees[i]=tbs;
