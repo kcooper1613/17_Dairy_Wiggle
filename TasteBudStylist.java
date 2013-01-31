@@ -1,5 +1,6 @@
 public class TastebudStylist extends Employee(){
 	public TastebudStylist(){
+		// @BC: This line is redundant; setBWS does not return anything
 		baseWeeklySalary = setBaseWeeklySalary(1000);
 	}
 	public void work(){
